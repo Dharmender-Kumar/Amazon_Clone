@@ -14,6 +14,7 @@ function Home() {
 
         <div className="home__row">
           <Product
+            className="drop-shadow"
             id="12321341"
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
             price={11.96}
