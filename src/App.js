@@ -12,9 +12,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
 
-const promise =
-  loadStripe();
-  //secret key stripe here
+const promise = loadStripe('pk_test_51LOcXOSE7TadfVhIu58IMzBMpB47CwbwPt6WaYCxXXZfIKuClgz9nxHFeV6lSu4ognpjajVrofTqfhsa3pUnU2ty005WvKbn5x');
+//publish key stripe here
 function App() {
   const [{}, dispatch] = useStateValue("");
 
@@ -45,7 +44,7 @@ function App() {
     //BEM convention
     <BrowserRouter>
       <div className="app">
-        {/* <Header /> */}
+       
         <Routes>
           <Route
             path="/orders"
@@ -57,7 +56,6 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
-
           <Route
             path="/checkout"
             element={
@@ -78,7 +76,6 @@ function App() {
               </>
             }
           />
-
           <Route
             path="/"
             element={

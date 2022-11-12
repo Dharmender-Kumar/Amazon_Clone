@@ -27,7 +27,7 @@ function Subtotal() {
         value={getBasketTotal(basket)} // Part of the homework
         displayType={"text"}
         thousandSeparator={true}
-        prefix={"$"}
+        prefix={"₹"}
       />
 
       <button onClick={(e) => navigate("/payment")}>Proceed to Checkout</button>
